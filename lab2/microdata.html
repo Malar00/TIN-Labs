@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <title>Jan Sitarski. TIN</title>
+</head>
+<body>
+<article>
+    <div itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Jan Sitarski</span>
+        <span itemprop="email">s20701@pjwstk.edu.pl</span>
+        <span itemprop="gender">Male</span>
+        <meta itemprop="affiliation" itemscope itemtype="http://schema.org/Organization" itemref="pjatk">
+        <meta itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization" itemref="lozur">
+    </div>
+
+</article>
+
+<article>
+    <div id="lozur">
+        <span itemprop="name">Liceum Ogólnokształcące im. Marii Dąbrowskiej</span>
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress"> ul. Zeromskiego</span>
+            <span itemprop="addressLocality">Żuromin</span>,
+            <span itemprop="postalCode">09-300</span>
+        </div>
+    </div>
+</article>
+<div id="pjatk">
+    <span itemprop="name">Polsko-Japońska Akademia Technik Komputerowych</span>
+    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress"> ul. Brzegi 55 </span>
+        <span itemprop="addressLocality">Gdańsk</span>,
+        <span itemprop="postalCode">22-110</span>
+    </div>
+</div>
+</body>
+</html>

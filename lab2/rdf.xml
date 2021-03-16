@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rdf:RDF
+        xmlns:rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:foaf = "http://xmlns.com/foaf/0.1/"
+        xmlns:bio = "http://purl.org/vocab/bio/0.1/"
+>
+
+    <foaf:Person rdf:ID="s20701">
+        <foaf:name>Jan Sitarski</foaf:name>
+        <foaf:gender>Male</foaf:gender>
+        <foaf:givenname>Jan</foaf:givenname>
+        <foaf:family_name>Sitarski</foaf:family_name>
+        <foaf:homepage rdf:resource="http://szuflandia.pjwstk.edu.pl/~s20701/"/>
+        <bio:AlumniOf>
+            <foaf:Organization rdf:ID="LOZuromin">
+                <foaf:name>Liceum Ogólnokształcące im. Marii Dąbrowskiej</foaf:name>
+                <foaf:homepage rdf:resource="http://lozuromin.pl/"/>
+            </foaf:Organization>
+        </bio:AlumniOf>
+        <bio:Affiliation>
+            <foaf:Organization rdf:ID="pjatk">
+                <foaf:name>Polsko-Japońska Akademia Technik Komputerowych</foaf:name>
+                <foaf:homepage rdf:resource="https://gdansk.pja.edu.pl/pl/"/>
+            </foaf:Organization>
+        </bio:Affiliation>
+    </foaf:Person>
+
+</rdf:RDF>
