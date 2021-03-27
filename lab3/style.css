@@ -1,0 +1,50 @@
+body {
+    padding-left: 17em;
+    background-color: aquamarine;
+}
+
+ul.navbar {
+    position: fixed;
+    left: 1em;
+    background-color: aqua;
+}
+
+ol.books {
+    list-style-type: upper-roman;
+}
+
+span.author {
+    text-transform: capitalize;
+}
+
+span.title {
+    font-style: italic;
+}
+
+footer {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted;
+}
+
+.educationList{
+    display: none;
+}
+
+#education:hover .educationList{
+    display: block;
+    list-style-type: upper-roman;
+    background-color: deepskyblue;
+}
+
+@media print {
+    body {
+        padding-left: 5em;
+    }
+
+    ul.navbar {
+        position: fixed;
+        left: 1em;
+        display: none;
+    }
+}
