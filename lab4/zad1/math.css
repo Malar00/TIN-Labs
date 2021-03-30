@@ -1,0 +1,38 @@
+body{
+    counter-reset: title imgcap;
+}
+h2{
+    counter-reset: subtitle definition;
+}
+
+
+h2:before{
+    counter-increment: title;
+    content: "Rozdział " counter(title) ". ";
+}
+h3:before{
+    counter-increment: subtitle;
+    content: counter(title)"."counter(subtitle) ". ";
+}
+
+p.definition:before{
+    counter-increment: definition;
+    content: "Definicja " counter(subtitle) "." counter(definition)" ";
+    font-weight: bold;
+}
+
+p.theorem:before{
+    counter-increment: definition;
+    content: "Twierdzenie " counter(title) "." counter(definition)" ";
+    font-weight: bold;
+}
+
+p.proof:before{
+    content: "Dowód. ";
+    font-style: italic;
+}
+
+figcaption:before{
+    counter-increment: imgcap;
+    content: "Rysunek " counter(imgcap)". ";
+}
