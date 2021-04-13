@@ -1,0 +1,6 @@
+div.icon {
+    background-image: url('icons.png');
+    width: 16px;
+    height: 16px;
+    background-position: bottom;
+}

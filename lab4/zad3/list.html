@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://users.pja.edu.pl/~denisjuk/tin/html/list.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./list.css">
+    <title>Syreny z Tytana</title>
+    
+  <script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script><script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+  <body>
+    <ul>
+      <li class="open">
+	<div class="icon"></div>
+	<div class="text">Rozdział 1<br>Pomiędzy czatą a&nbsp;czartyzmem.</div>
+	<ul>
+	  <li class="closed">
+	    <div class="icon"></div>
+	    <div class="text">Dziś każdy umie odnaleźć sens życia w&nbsp;sobie samym.</div>
+	  </li>
+	  <li class="leaf">
+	    <div class="icon"></div>
+	    <div class="text">Był tłum.<br> Materializacje odbywały się od dziewięciu lat.</div>
+	  </li>
+	</ul>
+      </li>
+      <li class="closed">
+	<div class="icon"></div>
+	<div class="text">Rozdiał 2<br>Amok w&nbsp;furcie.</div>
+      </li>
+    </ul>
+
+
+</body></html>
