@@ -1,0 +1,84 @@
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/*https://www.w3schools.com/CSSref/pr_grid-template-areas.asp*/
+#grid-container {
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "baner baner rekrutacja"
+    "wi wsnm important"
+    "wi wsnm current"
+    "gallery gallery gallery"
+    "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    justify-self: center;
+}
+
+nav {
+    grid-area: nav;
+    background-color: red;
+    padding: 5px;
+    justify-self: stretch;
+
+}
+
+nav > ul > li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#baner {
+    grid-area: baner;
+    justify-self: center;
+}
+
+#rekrutacja {
+    grid-area: rekrutacja;
+}
+
+#wi {
+    grid-area: wi;
+}
+
+#wsnm {
+    grid-area: wsnm;
+}
+
+#important {
+    grid-area: important;
+}
+
+#current {
+    grid-area: current;
+}
+
+#gallery {
+    grid-area: gallery;
+    justify-self: center;
+}
+
+footer {
+    grid-area: footer;
+    justify-self: stretch;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}

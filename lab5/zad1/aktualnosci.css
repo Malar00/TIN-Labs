@@ -1,0 +1,17 @@
+h2{
+    background-color: lightgray;
+}
+h2 > time{
+    color: gray;
+    float: right;
+    font-size: 0.8em;
+}
+
+img{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+article{
+    clear: both;
+}
