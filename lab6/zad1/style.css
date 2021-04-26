@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+#container {
+  background-color: #ffeef1;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "header header header" "nav nav nav" "left main important" "footer footer footer";
+}
+#container header {
+  background-color: #ffc0ca;
+  justify-self: stretch;
+  text-align: center;
+  padding: 1rem;
+  grid-area: header;
+}
+#container nav {
+  background: url("images/bg_nav.png"), repeat;
+  justify-self: stretch;
+  background-size: contain;
+  grid-area: nav;
+}
+#container nav a {
+  text-decoration: none;
+  color: white;
+}
+#container nav ul {
+  padding: 0;
+  white-space: nowrap;
+}
+#container nav ul li {
+  display: inline-block;
+  background: url("images/bg_nav.png");
+  background-size: cover;
+  margin: 0 -2px;
+  padding: 8px;
+  border-right: 3px black solid;
+  white-space: nowrap;
+}
+#container nav ul li:hover {
+  background: url("images/bg_nav_h.png");
+  background-size: cover;
+}
+#container #left {
+  background-color: #ffdfe4;
+  grid-area: left;
+}
+#container #left h2,
+#container #left h3,
+#container #left p {
+  margin: 1rem;
+}
+#container #main {
+  background-color: #ffe9ec;
+  grid-area: main;
+}
+#container #main * {
+  margin: 1rem;
+}
+#container #important {
+  grid-area: important;
+  background-color: #ffc0ca;
+}
+#container #important h2 {
+  margin: 1rem;
+}
+#container #important ul {
+  list-style-image: url("images/bullet.png");
+}
+#container #important ul li {
+  margin: 1rem;
+}
+#container footer {
+  background-color: #ff8396;
+  padding: 1rem;
+  text-align: center;
+  grid-area: footer;
+}
+@media screen and (max-width: 800px) {
+  #container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "nav nav" "main main" "left important" "footer footer";
+  }
+}
+@media screen and (max-width: 600px) {
+  #container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "nav" "main" "left" "important" "footer";
+  }
+  #container nav ul {
+    white-space: normal;
+  }
+  #container nav ul li {
+    width: 100%;
+    text-align: center;
+    background-size: contain;
+  }
+}
+/*# sourceMappingURL=style.css.map */
