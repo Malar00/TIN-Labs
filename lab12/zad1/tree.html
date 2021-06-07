@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://users.pja.edu.pl/~denisjuk/tin/html/tree.html -->
+<html lang="pl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Polsko-Japońska Akademia Technik Komputerowych</title>
+  <script src="./tree.js"></script><script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script>
+  <style>
+    .drzewo span:hover {
+      font-weight: bold;
+    }
+
+    .drzewo span {
+      cursor: pointer;
+    }
+  </style>
+  
+<script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+
+<body>
+<h1>Programy Studiów PJATK</h1>
+
+  <ul class="drzewo" id="drzewo">
+    <li>Gdańsk
+      <ul>
+        <li>Informatyka
+          <ul>
+            <li>Studia stacjonarne</li>
+            <li>Studia niestacjonarne</li>
+          </ul>
+        </li>
+        <li>Sztuka Nowych Mediów
+          <ul>
+            <li>Studia stacjonarne</li>
+            <li>Studia niestacjonarne</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Warszawa
+      <ul>
+        <li>Informatyka
+          <ul>
+            <li>Studia stacjonarne</li>
+            <li>Studia niestacjonarne</li>
+          </ul>
+        </li>
+        <li>Sztuka Nowych Mediów
+          <ul>
+            <li>Studia stacjonarne</li>
+            <li>Studia niestacjonarne</li>
+          </ul>
+        </li>
+        <li>Architektura Wnętrz
+          <ul>
+            <li>Studia stacjonarne</li>
+            <li>Studia niestacjonarne</li>
+          </ul>
+        </li>
+        <li>Zarządzanie Informacją
+          <ul>
+            <li>Studia stacjonarne</li>
+            <li>Studia niestacjonarne</li>
+          </ul>
+        </li>
+        <li>Kultura Japonii
+          <ul>
+            <li>Studia stacjonarne</li>
+            <li>Studia niestacjonarne</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+
+</body></html>
