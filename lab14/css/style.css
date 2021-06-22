@@ -1,0 +1,26 @@
+.today {
+    background-color: lightgreen;
+}
+
+.booked-calendar {
+    background-color: red;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: dimgrey;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: darkgray;
+}
